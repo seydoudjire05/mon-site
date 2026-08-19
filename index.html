@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css"
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seydou Store | Abonnements numériques</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* EN-TÊTE */
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #ddd;
+            font-size: 17px;
+        }
+
+        /* SERVICES */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .titre {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .titre h2 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .titre p {
+            color: #666;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        /* CARTE */
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .prix {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding: 12px 0;
+        }
+
+        .prix span {
+            font-weight: bold;
+        }
+
+        .prix strong {
+            background: #222;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .commande {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: #111;
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .commande:hover {
+            background: #333;
+        }
+
+        /* PAIEMENT */
+        .paiement {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        .paiement h2 {
+            margin-bottom: 20px;
+        }
+
+        .paiement-box {
+            max-width: 500px;
+            margin: auto;
+            background: #222;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .paiement-box p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 15px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            background: #000;
+            color: #aaa;
+            padding: 20px;
+        }
+
+        /* TELEPHONE */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+    <header>
+        <h1>SEYDOU STORE</h1>
+        <p>Qualité • Rapidité • Sécurité</p>
+        <p>Vos abonnements numériques à prix abordables</p>
+    </header>
+
+
+    <!-- SERVICES -->
+    <main class="container">
+
+        <div class="titre">
+            <h2>Nos abonnements</h2>
+            <p>Choisissez votre service et contactez-nous pour commander.</p>
+        </div>
+
+
+        <section class="services">
+
+            <!-- SNAPCHAT -->
+            <div class="card">
+                <h3>
+                    <img src="https://cdn.simpleicons.org/Snapchat">
+                    Snapchat+ 
+                    </h3>
+
+                <div class="prix">
+                    <span>1 mois</span>
+                    <strong>2 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>1 an</span>
+                    <strong>5 000 FCFA</strong>
+                </div>
+
+                <a class="commande"
+                   href="https://wa.me/22360800945?text=Bonjour%2C%20je%20veux%20commander%20Snapchat%2B">
+                    Commander
+                </a>
+            </div>
+
+
+            <!-- NETFLIX -->
+            <div class="card">
+                <h3>
+                    <img src="https://cdn.simpleicons.org/Netflix" alt="Netflix">
+                    Netflix
+                </h3>
+
+                <div class="prix">
+                    <span>Mobile</span>
+                    <strong>4 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>Standard</span>
+                    <strong>5 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>Essentiel</span>
+                    <strong>8 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>Premium</span>
+                    <strong>10 000 FCFA</strong>
+                </div>
+
+                <a class="commande"
+                   href="https://wa.me/22360800945?text=Bonjour%2C%20je%20veux%20commander%20Netflix">
+                    Commander
+                </a>
+            </div>
+
+
+            <!-- CAPCUT -->
+<div class="card">
+    <h3>
+        <img src="images/capcut.png.webp" alt="Capcut">
+    </h3>
+
+    <div class="prix">
+        <span>1 mois</span>
+        <strong>5 000 FCFA</strong>
+    </div>
+
+    <div class="prix">
+        <span>1 an</span>
+        <strong>25 000 FCFA</strong>
+    </div>
+
+    <a class="commande"
+       href="https://wa.me/22360800945?text=Bonjour%2C%20je%20veux%20commander%20CapCut%20Pro">
+        Commander
+    </a>
+</div> 
+
+
+            <!-- APPLE MUSIC -->
+            <div class="card">
+                <h3>
+                   <img src="images/apple-music.png.webp" alt="apple-music">     
+                Apple Music
+                </h3>
+
+                <div class="prix">
+                    <span>1 mois</span>
+                    <strong>4 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>3 mois</span>
+                    <strong>7 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>1 an</span>
+                    <strong>25 000 FCFA</strong>
+                </div>
+
+                <a class="commande"
+                   href="https://wa.me/22360800945?text=Bonjour%2C%20je%20veux%20commander%20Apple%20Music">
+                    Commander
+                </a>
+            </div>
+
+
+            <!-- SPOTIFY -->
+            <div class="card">
+                <h3>
+                  <img src="https://cdn.simpleicons.org/Spotify">  
+                Spotify
+                </h3>
+
+                <div class="prix">
+                    <span>1 mois</span>
+                    <strong>3 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>3 mois</span>
+                    <strong>4 000 FCFA</strong>
+                </div>
+
+                <a class="commande"
+                   href="https://wa.me/22360800945?text=Bonjour%2C%20je%20veux%20commander%20Spotify">
+                    Commander
+                </a>
+            </div>
+
+
+            <!-- ICLOUD -->
+            <div class="card">
+                <h3>
+                 <img src="https://cdn.simpleicons.org/iCloud">   
+                iCloud+
+                </h3>
+
+                <div class="prix">
+                    <span>50 Go</span>
+                    <strong>3 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>200 Go</span>
+                    <strong>5 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>2 To</span>
+                    <strong>10 000 FCFA</strong>
+                </div>
+
+                <a class="commande"
+                   href="https://wa.me/22360800945?text=Bonjour%2C%20je%20veux%20commander%20iCloud%2B">
+                    Commander
+                </a>
+            </div>
+
+
+            <!-- CHATGPT -->
+            <div class="card">
+                <h3>
+                 <img src="images/chatgpt.png.png" aria-label="ChatGPT">   
+                ChatGPT
+                </h3>
+
+                <div class="prix">
+                    <span>1 mois</span>
+                    <strong>7 000 FCFA</strong>
+                </div>
+
+                <a class="commande"
+                   href="https://wa.me/22360800945?text=Bonjour%2C%20je%20veux%20commander%20ChatGPT">
+                    Commander
+                </a>
+            </div>
+
+
+            <!-- FACEAPP -->
+            <div class="card">
+                <h3> 
+                 <img src="images/faceapp.png.png" alt="FaceApp">   
+                FaceApp
+                </h3>
+
+                <div class="prix">
+                    <span>1 mois</span>
+                    <strong>8 000 FCFA</strong>
+                </div>
+
+                <div class="prix">
+                    <span>1 an</span>
+                    <strong>25 000 FCFA</strong>
+                </div>
+
+                <a class="commande"
+                   href="https://wa.me/22360800945?text=Bonjour%2C%20je%20veux%20commander%20FaceApp">
+                    Commander
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PAIEMENT -->
+    <section class="paiement">
+
+        <h2>💳 Paiement & Contact</h2>
+
+        <div class="paiement-box">
+
+            <p>
+             <img src="images/orange.png" alt="orange Money">   
+             <strong>Orange Money</strong>
+            </p>
+            <p>71 12 15 41</p>
+
+            <p>
+             <img src="images/whatsapp.png" alt="whatsapp">   
+            <strong>WhatsApp</strong>
+           </p>
+            <p>60 80 09 45</p>
+
+            <a class="whatsapp" href="https://wa.me/22360800945">
+               href="https://wa.me/22360800945">
+                💬 Commander sur WhatsApp
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Seydou Store — Tous droits réservés.
+    </footer>
+
+ <script src="Script.js"></script>   
+</body>
+</html>
